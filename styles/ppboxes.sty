@@ -1,11 +1,6 @@
 % styles/ppboxes.sty
 \ProvidesPackage{ppboxes}[2026/01/26 Boxed environments]
 
-% tcolorbox 6.x calls \NewStructureName (LaTeX tagging infrastructure)
-% which is only defined when \DocumentMetadata{} precedes \documentclass.
-% Provide a no-op fallback so the book compiles without that preamble command.
-\providecommand{\NewStructureName}[1]{}
-
 \RequirePackage[most]{tcolorbox}
 \tcbuselibrary{breakable,skins,documentation}
 
